@@ -8,18 +8,18 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container {
+.wrapper {
   width: 300px;
   margin: auto;
 }
 
 /* TodoHeader
 ***************************************************/
-.container header {
+header {
   font-size: 22px;
   font-weight: bold;
   border-bottom: 1px solid #ddd;
-  padding: 16px 0;
+  padding: 20px 0;
 }
 
 header > span {
@@ -38,18 +38,18 @@ header > button {
 
 /* TodoList
 ***************************************************/
-.container ul {
+ul {
   padding: 0;
   list-style: none;
 }
 
-/* .container li {
+li {
   line-height: 30px;
   margin: 5px 0;
   border-bottom: 1px solid #ddd;
-} */
+}
 
-.container input[type="checkbox"] {
+input[type="checkbox"] {
   margin-right: 10px;
 }
 

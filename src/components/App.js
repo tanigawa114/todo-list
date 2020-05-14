@@ -29,7 +29,7 @@ function App() {
 
   return (
     <TodoContext.Provider value={{ state, dispatch }}>
-      <div className="container">
+      <div className="wrapper">
         <TodoHeader />
         <TodoList />
         <TodoForm />

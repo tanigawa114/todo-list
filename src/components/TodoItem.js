@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import { CHECK_TODO, DELETE_TODO } from "../actions";
 import TodoContext from "../contexts/TodoContext";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { ListGroupItem } from "reactstrap";
 
 function TodoItem({ todo }) {
   const { dispatch } = useContext(TodoContext);
@@ -12,7 +10,7 @@ function TodoItem({ todo }) {
   }
 
   return (
-    <ListGroupItem>
+    <li>
       <label>
         <input type="checkbox" checked={todo.isDone} onChange={handle} />
         <span className={todo.isDone ? "done" : ""}>{todo.title}</span>
@@ -25,7 +23,7 @@ function TodoItem({ todo }) {
       >
         削除
       </span>
-    </ListGroupItem>
+    </li>
   );
 }
 
